@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<style>
+body {
+  background-color: lightblue;
+}
+.button {
+  background-color: lightblue;
+  border:0.1em solid #000000;
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+form {
+    overflow: hidden;
+}
+h1 {
+  text-align: center;
+  color: blue;
+  font-size: 200%;
+}
+table, th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 15px;
+}
+</style>
+</head>
+<body>
+<form action="/submit" method="POST">
+<div class="container">
+<h1>Expense Form</h1>
+<table border="0" align="center">
+ <tbody>
+  <tr>
+ 	<td><label>Expend on:</label></td>
+    <td><input type="text"></td>
+  </tr>
+  <tr>
+    <td><label>Money spend:</label></td>
+    <td><input type="number" value="money"></td>
+  </tr>
+  <tr>
+    <td><label>Spend by:</label></td>
+    <td><input type="text"></td>
+  </tr>
+  <tr>
+    <td><label>Date:</label></td>
+    <td><input type="date" value="date"></td>
+  </tr>
+  <tr>
+    <td align="center"><button class="button">
+      Submit
+    </button></td>
+  </tr>
+</tbody>
+</div>
+<table style="width:100%">
+<tr>
+	<th>Expend on</th>
+    <th>Money spend</th>
+    <th>Spend by</th>
+	<th>Date</th>
+</tr>
+</form>
+<hr>
+</body>
+</html>
